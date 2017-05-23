@@ -40,7 +40,7 @@
             // Generate Rolls
             for (int i = 0; i < this.gameData.Count; i++)
             {
-                var roll = randomGenerator.Next(1, this.gameData.Sides);
+                var roll = randomGenerator.Next(1, this.gameData.Sides + 1);
                 total += roll;
                 rolls.Add(roll);
             }
